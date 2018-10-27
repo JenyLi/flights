@@ -2,7 +2,7 @@ import { fromJS } from 'immutable';
 
 export const loadLocalStorageState = () => {
     try {
-        const serializedState = localStorage.getItem('feed-state');
+        const serializedState = localStorage.getItem('flights-state');
         const state  = {};
         let deserializedState = null;
 
@@ -25,7 +25,7 @@ export const loadLocalStorageState = () => {
 export const saveLocalStorageState = (state) => {
     try {
         const serializedState = JSON.stringify(state);
-        localStorage.setItem('feed-state', serializedState);
+        localStorage.setItem('flights-state', serializedState);
     } catch (err) {
         console.log(err);
     }

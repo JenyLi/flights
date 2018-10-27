@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "axios": "^0.18.0",
         "grommet": "^1.11.0",
         "immutable": "^3.8.2",
         "install": "^0.12.1",
